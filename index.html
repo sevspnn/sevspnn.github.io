@@ -10,20 +10,6 @@
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#111827" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            base: { bg: '#f7f7f7', card: '#ffffff', ink: '#111827', muted: '#6b7280', ring: '#e5e7eb' }
-          },
-          boxShadow: { soft: '0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06)' },
-          borderRadius: { xl2: '1rem' }
-        }
-      }
-    }
-  </script>
-  <style> html{ -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;} </style>
 </head>
 <body class="bg-base-bg text-base-ink selection:bg-black selection:text-white">
   <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-base-ring">
@@ -34,17 +20,7 @@
         <a href="#projetos" class="hover:text-base-ink">Projetos</a>
         <a href="#publicacoes" class="hover:text-base-ink">Publicações</a>
         <a href="#contato" class="hover:text-base-ink">Contato</a>
-        <button id="themeBtn" class="rounded-full border border-base-ring px-3 py-1 text-xs">Tema</button>
       </nav>
-      <button id="menuBtn" class="md:hidden rounded-full border border-base-ring px-3 py-1 text-xs">Menu</button>
-    </div>
-    <div id="mobileNav" class="md:hidden hidden border-t border-base-ring bg-white">
-      <div class="mx-auto max-w-5xl px-4 py-3 grid gap-2 text-sm text-base-muted">
-        <a href="#sobre" class="hover:text-base-ink">Sobre</a>
-        <a href="#projetos" class="hover:text-base-ink">Projetos</a>
-        <a href="#publicacoes" class="hover:text-base-ink">Publicações</a>
-        <a href="#contato" class="hover:text-base-ink">Contato</a>
-      </div>
     </div>
   </header>
 
@@ -54,11 +30,6 @@
       <div>
         <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Severino Peixoto Nunes Netto</h1>
         <p class="mt-2 text-base-muted">Professor de Equipamentos Biomédicos no IFRN (Campus Ceará-Mirim). Doutorando em Engenharia Biomédica (UFU), pesquisando simulações por elementos finitos e atuadores pneumáticos para órteses ativas baseadas em robótica mole.</p>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 text-sm hover:shadow-soft">Contato</a>
-          <a href="#projetos" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 text-sm hover:shadow-soft">Ver projetos</a>
-          <a href="cv.pdf" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 text-sm hover:shadow-soft" download>Baixar CV (PDF)</a>
-        </div>
       </div>
     </div>
   </section>
@@ -67,139 +38,58 @@
     <div class="grid md:grid-cols-3 gap-6">
       <article class="md:col-span-2 bg-base-card rounded-xl2 shadow-soft p-6 border border-base-ring">
         <h2 class="text-xl font-semibold">Sobre</h2>
-        <p class="mt-3 leading-relaxed text-base-muted">Sou engenheiro biomédico, mestre em Neuroengenharia (IIN-ELS) e doutorando em Engenharia Biomédica (UFU). Atuo como professor de Equipamentos Biomédicos no IFRN e como cientista de dados em projetos aplicados. Minhas áreas de interesse incluem Tecnologias Assistivas, Robótica Mole, Modelagem por Elementos Finitos (FEM), Processamento de Sinais Biológicos e IA aplicada. Tenho experiência com Arduino/Unity para jogos sérios em saúde, manutenção de equipamentos hospitalares e projetos de extensão com foco social.</p>
+        <p class="mt-3 leading-relaxed text-base-muted">Sou engenheiro biomédico, mestre em Neuroengenharia (IIN-ELS) e doutorando em Engenharia Biomédica (UFU). Atuo como professor de Equipamentos Biomédicos no IFRN e como cientista de dados em projetos aplicados. Minhas áreas de interesse incluem Tecnologias Assistivas, Robótica Mole, Modelagem por Elementos Finitos (FEM), Processamento de Sinais Biológicos e IA aplicada.</p>
       </article>
       <aside class="bg-base-card rounded-xl2 shadow-soft p-6 border border-base-ring">
         <h3 class="font-medium">Links rápidos</h3>
         <ul class="mt-3 space-y-2 text-sm text-base-muted">
-          <li><a href="#" class="hover:text-base-ink">Currículo Lattes</a></li>
-          <li><a href="#" class="hover:text-base-ink">ORCID / Google Scholar</a></li>
-          <li><a href="#" class="hover:text-base-ink">GitHub</a></li>
-          <li><a href="#" class="hover:text-base-ink">LinkedIn</a></li>
+          <li><a href="http://lattes.cnpq.br/5444255427158710" class="hover:text-base-ink" target="_blank">Currículo Lattes</a></li>
+          <li><a href="https://github.com/sevspnn" class="hover:text-base-ink" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/severinonetto/" class="hover:text-base-ink" target="_blank">LinkedIn</a></li>
+          <li><a href="https://instagram.com/datasevs" class="hover:text-base-ink" target="_blank">Instagram</a></li>
+          <li><a href="mailto:severinonettoengbio@gmail.com" class="hover:text-base-ink">E-mail</a></li>
         </ul>
       </aside>
     </div>
   </section>
 
   <section id="projetos" class="mx-auto max-w-5xl px-4 py-10">
-    <div class="flex items-baseline justify-between">
-      <h2 class="text-xl font-semibold">Projetos em destaque</h2>
-      <a href="#contato" class="text-sm text-base-muted hover:text-base-ink">Quer colaborar?</a>
-    </div>
+    <h2 class="text-xl font-semibold">Projetos</h2>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
-        <div class="flex items-center justify-between">
-          <h3 class="font-medium">SighGame — Jogo para Reabilitação Respiratória Pediátrica</h3>
-          <span class="text-xs text-base-muted">2024–2025</span>
-        </div>
-        <p class="mt-2 text-sm text-base-muted">Jogo sério em Unity integrado a Arduino e sensor de fluxo: o sopro controla o avatar (vertical) e joystick a horizontal. Sessões de 3 minutos com contagem regressiva. Versão preliminar premiada como melhor trabalho científico em evento da Liga Contra o Câncer.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="rounded-full border border-base-ring px-2 py-1">Unity</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">Arduino</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">Saúde</span>
-        </div>
-        <div class="mt-4 flex gap-3 text-sm">
-          <a href="#" class="underline">Repositório</a>
-          <a href="#" class="underline">Apresentação</a>
-        </div>
+        <h3 class="font-medium">SighGame — Reabilitação Respiratória Pediátrica</h3>
+        <p class="mt-2 text-sm text-base-muted">Jogo sério em Unity + Arduino para treinamento respiratório de crianças, com feedback visual em tempo real.</p>
       </article>
-
       <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
-        <div class="flex items-center justify-between">
-          <h3 class="font-medium">FEM em Robótica Mole: foco em atuadores 3D impressos</h3>
-          <span class="text-xs text-base-muted">2025</span>
-        </div>
-        <p class="mt-2 text-sm text-base-muted">Revisão em andamento sobre modelagem por elementos finitos (Yeoh, Ogden, Mooney-Rivlin), estratégias de caracterização e validação experimental para atuadores moles impressos em 3D.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="rounded-full border border-base-ring px-2 py-1">FEM</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">Soft Robotics</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">3D Printing</span>
-        </div>
-        <div class="mt-4 flex gap-3 text-sm">
-          <a href="#" class="underline">Manuscrito</a>
-        </div>
+        <h3 class="font-medium">FEM em Robótica Mole</h3>
+        <p class="mt-2 text-sm text-base-muted">Revisão de métodos de modelagem para atuadores moles impressos em 3D, com foco em validação experimental.</p>
       </article>
-
       <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
-        <div class="flex items-center justify-between">
-          <h3 class="font-medium">Órtese Ativa com Atuadores Pneumáticos (Doutorado)</h3>
-          <span class="text-xs text-base-muted">2023–atual</span>
-        </div>
-        <p class="mt-2 text-sm text-base-muted">Simulações e desenvolvimento de atuadores pneumáticos para órteses ativas, com foco em ELA e reabilitação. Ânfase em modelagem, controle e integração com materiais moles.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="rounded-full border border-base-ring px-2 py-1">Pneumática</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">Modelagem</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">Reabilitação</span>
-        </div>
-        <div class="mt-4 flex gap-3 text-sm">
-          <a href="#" class="underline">Resultados</a>
-        </div>
+        <h3 class="font-medium">Órtese Ativa Pneumática</h3>
+        <p class="mt-2 text-sm text-base-muted">Desenvolvimento e simulação de atuadores pneumáticos para órteses de reabilitação, com foco em ELA.</p>
       </article>
     </div>
   </section>
 
   <section id="publicacoes" class="mx-auto max-w-5xl px-4 py-10">
-    <h2 class="text-xl font-semibold">Publicações & materiais</h2>
+    <h2 class="text-xl font-semibold">Publicações</h2>
     <ul class="mt-4 space-y-3 text-sm text-base-muted">
-      <li>Netto, S. P. N. <span class="text-base-ink">Finite Element Modeling in Soft Robotics: Focus on 3D-Printed Actuator Applications</span>. (manuscrito em preparo, 2025).</li>
-      <li>Equipe SighGame. <span class="text-base-ink">Development of a digital game for Pediatric Respiratory Rehabilitation using Unity and Arduino</span>. Apresentações e materiais associados (2024–2025).</li>
+      <li>Netto, S. P. N. Finite Element Modeling in Soft Robotics: Focus on 3D-Printed Actuator Applications (em preparo, 2025).</li>
+      <li>Equipe SighGame. Development of a digital game for Pediatric Respiratory Rehabilitation using Unity and Arduino (2024–2025).</li>
     </ul>
   </section>
 
   <section id="contato" class="mx-auto max-w-5xl px-4 py-10">
     <div class="bg-base-card rounded-xl2 border border-base-ring p-6 shadow-soft">
       <h2 class="text-xl font-semibold">Contato</h2>
-      <p class="mt-2 text-base-muted">Prefere e-mail, LinkedIn ou GitHub. Envie uma mensagem e responderei assim que possível.</p>
+      <p class="mt-2 text-base-muted">Entre em contato pelos links abaixo:</p>
       <div class="mt-4 flex flex-wrap gap-3 text-sm">
-        <a href="#" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
-          Email
-        </a>
-        <a href="#" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 1 1-8 8 6 6 0 0 1 8-8z"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
-          LinkedIn
-        </a>
-        <a href="#" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.97 1.5-4.97-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 3.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 3.77 5.44 5.44 0 0 0 3.5 7.52c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 21.13V24"/></svg>
-          GitHub
-        </a>
+        <a href="mailto:severinonettoengbio@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">Email</a>
+        <a href="https://www.linkedin.com/in/severinonetto/" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">LinkedIn</a>
+        <a href="https://github.com/sevspnn" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">GitHub</a>
+        <a href="https://instagram.com/datasevs" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">Instagram</a>
       </div>
     </div>
   </section>
-
-  <footer class="mx-auto max-w-5xl px-4 py-10 text-center text-xs text-base-muted">
-    © <span id="year"></span> Severino Peixoto Nunes Netto. Todos os direitos reservados.
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-    menuBtn?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
-    const themeBtn = document.getElementById('themeBtn');
-    themeBtn?.addEventListener('click', () => document.documentElement.classList.toggle('dark'));
-    const darkObserver = new MutationObserver(() => {
-      if (document.documentElement.classList.contains('dark')) {
-        document.body.classList.add('bg-neutral-900','text-neutral-100');
-        document.querySelectorAll('.bg-white').forEach(el=>el.classList.replace('bg-white','bg-neutral-900/90'));
-      } else {
-        document.body.classList.remove('bg-neutral-900','text-neutral-100');
-      }
-    });
-    darkObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Severino Peixoto Nunes Netto",
-    "url": "",
-    "jobTitle": "Professor de Equipamentos Biomédicos; Doutorando em Engenharia Biomédica",
-    "affiliation": ["IFRN - Campus Ceará-Mirim", "UFU"],
-    "knowsAbout": ["Assistive Technologies","Soft Robotics","Finite Element Modeling","Biomedical Signal Processing","AI"],
-    "sameAs": []
-  }
-  </script>
 </body>
 </html>

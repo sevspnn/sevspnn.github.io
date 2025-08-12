@@ -3,48 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seu Nome — Portfólio</title>
-  <meta name="description" content="Página pessoal minimalista: currículo, projetos e contatos." />
-  <meta property="og:title" content="Seu Nome — Portfólio" />
-  <meta property="og:description" content="Página pessoal minimalista: currículo, projetos e contatos." />
+  <title>Severino Peixoto Nunes Netto — Portfólio</title>
+  <meta name="description" content="Professor de Equipamentos Biomédicos (IFRN) e doutorando em Engenharia Biomédica (UFU). Pesquisa em Robótica Mole, FEM e Tecnologias Assistivas." />
+  <meta property="og:title" content="Severino Peixoto Nunes Netto — Portfólio" />
+  <meta property="og:description" content="Professor de Equipamentos Biomédicos (IFRN) e doutorando em Engenharia Biomédica (UFU). Pesquisa em Robótica Mole, FEM e Tecnologias Assistivas." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#111827" />
-  <!-- Tailwind via CDN (para produção, recomendo build local) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Paleta neutra personalizada
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            base: {
-              bg: '#f7f7f7',
-              card: '#ffffff',
-              ink: '#111827',
-              muted: '#6b7280',
-              ring: '#e5e7eb',
-            }
+            base: { bg: '#f7f7f7', card: '#ffffff', ink: '#111827', muted: '#6b7280', ring: '#e5e7eb' }
           },
-          boxShadow: {
-            soft: '0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06)'
-          },
-          borderRadius: {
-            xl2: '1rem'
-          }
+          boxShadow: { soft: '0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06)' },
+          borderRadius: { xl2: '1rem' }
         }
       }
     }
   </script>
-  <style>
-    /* Tipografia sutil e legível */
-    html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-  </style>
+  <style> html{ -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;} </style>
 </head>
 <body class="bg-base-bg text-base-ink selection:bg-black selection:text-white">
-  <!-- Barra superior -->
   <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-base-ring">
     <div class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="font-semibold tracking-tight">Seu Nome</a>
+      <a href="#top" class="font-semibold tracking-tight">Severino Netto</a>
       <nav class="hidden md:flex items-center gap-6 text-sm text-base-muted">
         <a href="#sobre" class="hover:text-base-ink">Sobre</a>
         <a href="#projetos" class="hover:text-base-ink">Projetos</a>
@@ -54,7 +38,6 @@
       </nav>
       <button id="menuBtn" class="md:hidden rounded-full border border-base-ring px-3 py-1 text-xs">Menu</button>
     </div>
-    <!-- Menu mobile -->
     <div id="mobileNav" class="md:hidden hidden border-t border-base-ring bg-white">
       <div class="mx-auto max-w-5xl px-4 py-3 grid gap-2 text-sm text-base-muted">
         <a href="#sobre" class="hover:text-base-ink">Sobre</a>
@@ -65,13 +48,12 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section id="top" class="mx-auto max-w-5xl px-4 pt-14 pb-8">
     <div class="grid md:grid-cols-[160px,1fr] items-center gap-8">
-      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><rect width='100%' height='100%' fill='%23e5e7eb'/><text x='50%' y='52%' font-family='Arial' font-size='28' text-anchor='middle' fill='%239ca3af'>Sua Foto</text></svg>" alt="Sua foto" class="w-40 h-40 rounded-full shadow-soft object-cover"/>
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><rect width='100%' height='100%' fill='%23e5e7eb'/><text x='50%' y='52%' font-family='Arial' font-size='28' text-anchor='middle' fill='%239ca3af'>Foto</text></svg>" alt="Foto" class="w-40 h-40 rounded-full shadow-soft object-cover"/>
       <div>
-        <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Seu Nome</h1>
-        <p class="mt-2 text-base-muted">Título/Área — uma frase curta sobre o que você faz e no que está pesquisando.</p>
+        <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Severino Peixoto Nunes Netto</h1>
+        <p class="mt-2 text-base-muted">Professor de Equipamentos Biomédicos no IFRN (Campus Ceará-Mirim). Doutorando em Engenharia Biomédica (UFU), pesquisando simulações por elementos finitos e atuadores pneumáticos para órteses ativas baseadas em robótica mole.</p>
         <div class="mt-4 flex flex-wrap gap-2">
           <a href="#contato" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 text-sm hover:shadow-soft">Contato</a>
           <a href="#projetos" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 text-sm hover:shadow-soft">Ver projetos</a>
@@ -81,17 +63,17 @@
     </div>
   </section>
 
-  <!-- Sobre -->
   <section id="sobre" class="mx-auto max-w-5xl px-4 py-10">
     <div class="grid md:grid-cols-3 gap-6">
       <article class="md:col-span-2 bg-base-card rounded-xl2 shadow-soft p-6 border border-base-ring">
         <h2 class="text-xl font-semibold">Sobre</h2>
-        <p class="mt-3 leading-relaxed text-base-muted">Breve bio (3–5 linhas). Foque em impacto e áreas de interesse. Ex.: Engenharia Biomédica, Soft Robotics, IA aplicada e ensino. Cite laboratórios, instituições e linhas de pesquisa.</p>
+        <p class="mt-3 leading-relaxed text-base-muted">Sou engenheiro biomédico, mestre em Neuroengenharia (IIN-ELS) e doutorando em Engenharia Biomédica (UFU). Atuo como professor de Equipamentos Biomédicos no IFRN e como cientista de dados em projetos aplicados. Minhas áreas de interesse incluem Tecnologias Assistivas, Robótica Mole, Modelagem por Elementos Finitos (FEM), Processamento de Sinais Biológicos e IA aplicada. Tenho experiência com Arduino/Unity para jogos sérios em saúde, manutenção de equipamentos hospitalares e projetos de extensão com foco social.</p>
       </article>
       <aside class="bg-base-card rounded-xl2 shadow-soft p-6 border border-base-ring">
         <h3 class="font-medium">Links rápidos</h3>
         <ul class="mt-3 space-y-2 text-sm text-base-muted">
-          <li><a href="#" class="hover:text-base-ink">Lattes / ORCID / Google Scholar</a></li>
+          <li><a href="#" class="hover:text-base-ink">Currículo Lattes</a></li>
+          <li><a href="#" class="hover:text-base-ink">ORCID / Google Scholar</a></li>
           <li><a href="#" class="hover:text-base-ink">GitHub</a></li>
           <li><a href="#" class="hover:text-base-ink">LinkedIn</a></li>
         </ul>
@@ -99,81 +81,77 @@
     </div>
   </section>
 
-  <!-- Projetos -->
   <section id="projetos" class="mx-auto max-w-5xl px-4 py-10">
     <div class="flex items-baseline justify-between">
       <h2 class="text-xl font-semibold">Projetos em destaque</h2>
       <a href="#contato" class="text-sm text-base-muted hover:text-base-ink">Quer colaborar?</a>
     </div>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card de projeto -->
       <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
         <div class="flex items-center justify-between">
-          <h3 class="font-medium">Projeto 1</h3>
-          <span class="text-xs text-base-muted">2025</span>
+          <h3 class="font-medium">SighGame — Jogo para Reabilitação Respiratória Pediátrica</h3>
+          <span class="text-xs text-base-muted">2024–2025</span>
         </div>
-        <p class="mt-2 text-sm text-base-muted">Descrição curtinha do projeto (duas linhas). Diga o problema, sua solução e impacto.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="rounded-full border border-base-ring px-2 py-1">Python</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">FEM</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">Robótica Mole</span>
-        </div>
-        <div class="mt-4 flex gap-3 text-sm">
-          <a href="#" class="underline">Código</a>
-          <a href="#" class="underline">Demo</a>
-        </div>
-      </article>
-
-      <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
-        <div class="flex items-center justify-between">
-          <h3 class="font-medium">Projeto 2</h3>
-          <span class="text-xs text-base-muted">2024</span>
-        </div>
-        <p class="mt-2 text-sm text-base-muted">Resumo do projeto. Pode ser um jogo sério, ferramenta de análise, etc.</p>
+        <p class="mt-2 text-sm text-base-muted">Jogo sério em Unity integrado a Arduino e sensor de fluxo: o sopro controla o avatar (vertical) e joystick a horizontal. Sessões de 3 minutos com contagem regressiva. Versão preliminar premiada como melhor trabalho científico em evento da Liga Contra o Câncer.</p>
         <div class="mt-3 flex flex-wrap gap-2 text-xs">
           <span class="rounded-full border border-base-ring px-2 py-1">Unity</span>
           <span class="rounded-full border border-base-ring px-2 py-1">Arduino</span>
+          <span class="rounded-full border border-base-ring px-2 py-1">Saúde</span>
         </div>
         <div class="mt-4 flex gap-3 text-sm">
           <a href="#" class="underline">Repositório</a>
-          <a href="#" class="underline">Artigo</a>
+          <a href="#" class="underline">Apresentação</a>
         </div>
       </article>
 
       <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
         <div class="flex items-center justify-between">
-          <h3 class="font-medium">Projeto 3</h3>
-          <span class="text-xs text-base-muted">2023</span>
+          <h3 class="font-medium">FEM em Robótica Mole: foco em atuadores 3D impressos</h3>
+          <span class="text-xs text-base-muted">2025</span>
         </div>
-        <p class="mt-2 text-sm text-base-muted">Mais um exemplo de projeto com foco em resultados.</p>
+        <p class="mt-2 text-sm text-base-muted">Revisão em andamento sobre modelagem por elementos finitos (Yeoh, Ogden, Mooney-Rivlin), estratégias de caracterização e validação experimental para atuadores moles impressos em 3D.</p>
         <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="rounded-full border border-base-ring px-2 py-1">XGBoost</span>
-          <span class="rounded-full border border-base-ring px-2 py-1">SHAP</span>
+          <span class="rounded-full border border-base-ring px-2 py-1">FEM</span>
+          <span class="rounded-full border border-base-ring px-2 py-1">Soft Robotics</span>
+          <span class="rounded-full border border-base-ring px-2 py-1">3D Printing</span>
         </div>
         <div class="mt-4 flex gap-3 text-sm">
-          <a href="#" class="underline">Slides</a>
-          <a href="#" class="underline">Poster</a>
+          <a href="#" class="underline">Manuscrito</a>
+        </div>
+      </article>
+
+      <article class="bg-base-card rounded-xl2 border border-base-ring p-5 shadow-soft">
+        <div class="flex items-center justify-between">
+          <h3 class="font-medium">Órtese Ativa com Atuadores Pneumáticos (Doutorado)</h3>
+          <span class="text-xs text-base-muted">2023–atual</span>
+        </div>
+        <p class="mt-2 text-sm text-base-muted">Simulações e desenvolvimento de atuadores pneumáticos para órteses ativas, com foco em ELA e reabilitação. Ânfase em modelagem, controle e integração com materiais moles.</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-xs">
+          <span class="rounded-full border border-base-ring px-2 py-1">Pneumática</span>
+          <span class="rounded-full border border-base-ring px-2 py-1">Modelagem</span>
+          <span class="rounded-full border border-base-ring px-2 py-1">Reabilitação</span>
+        </div>
+        <div class="mt-4 flex gap-3 text-sm">
+          <a href="#" class="underline">Resultados</a>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- Publicações -->
   <section id="publicacoes" class="mx-auto max-w-5xl px-4 py-10">
-    <h2 class="text-xl font-semibold">Publicações</h2>
+    <h2 class="text-xl font-semibold">Publicações & materiais</h2>
     <ul class="mt-4 space-y-3 text-sm text-base-muted">
-      <li>Autor, A.; Autor, B. <span class="text-base-ink">Título do artigo</span>. Revista, 2025. <a href="#" class="underline">doi</a></li>
-      <li>Autor, A.; Autor, B. <span class="text-base-ink">Outro título</span>. Conferência, 2024. <a href="#" class="underline">pdf</a></li>
+      <li>Netto, S. P. N. <span class="text-base-ink">Finite Element Modeling in Soft Robotics: Focus on 3D-Printed Actuator Applications</span>. (manuscrito em preparo, 2025).</li>
+      <li>Equipe SighGame. <span class="text-base-ink">Development of a digital game for Pediatric Respiratory Rehabilitation using Unity and Arduino</span>. Apresentações e materiais associados (2024–2025).</li>
     </ul>
   </section>
 
-  <!-- Contato -->
   <section id="contato" class="mx-auto max-w-5xl px-4 py-10">
     <div class="bg-base-card rounded-xl2 border border-base-ring p-6 shadow-soft">
       <h2 class="text-xl font-semibold">Contato</h2>
-      <p class="mt-2 text-base-muted">Fale comigo por:</p>
+      <p class="mt-2 text-base-muted">Prefere e-mail, LinkedIn ou GitHub. Envie uma mensagem e responderei assim que possível.</p>
       <div class="mt-4 flex flex-wrap gap-3 text-sm">
-        <a href="mailto:seu.email@exemplo.com" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">
+        <a href="#" class="inline-flex items-center gap-2 rounded-full border border-base-ring px-4 py-2 hover:shadow-soft">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
           Email
         </a>
@@ -190,20 +168,16 @@
   </section>
 
   <footer class="mx-auto max-w-5xl px-4 py-10 text-center text-xs text-base-muted">
-    © <span id="year"></span> Seu Nome. Todos os direitos reservados.
+    © <span id="year"></span> Severino Peixoto Nunes Netto. Todos os direitos reservados.
   </footer>
 
   <script>
-    // Atualiza ano no rodapé
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Menu mobile
     const menuBtn = document.getElementById('menuBtn');
     const mobileNav = document.getElementById('mobileNav');
     menuBtn?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
-    // Tema claro/escuro simples (toggle de classe no <html>)
     const themeBtn = document.getElementById('themeBtn');
     themeBtn?.addEventListener('click', () => document.documentElement.classList.toggle('dark'));
-    // Ajuste de cores para dark mode (usando util classes globais)
     const darkObserver = new MutationObserver(() => {
       if (document.documentElement.classList.contains('dark')) {
         document.body.classList.add('bg-neutral-900','text-neutral-100');
@@ -215,15 +189,16 @@
     darkObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
   </script>
 
-  <!-- JSON-LD básico para SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Seu Nome",
-    "url": "https://seunome.github.io/",
-    "jobTitle": "Engenheiro(a)/Pesquisador(a)",
-    "sameAs": ["https://github.com/seunome", "https://www.linkedin.com/in/seunome/"]
+    "name": "Severino Peixoto Nunes Netto",
+    "url": "",
+    "jobTitle": "Professor de Equipamentos Biomédicos; Doutorando em Engenharia Biomédica",
+    "affiliation": ["IFRN - Campus Ceará-Mirim", "UFU"],
+    "knowsAbout": ["Assistive Technologies","Soft Robotics","Finite Element Modeling","Biomedical Signal Processing","AI"],
+    "sameAs": []
   }
   </script>
 </body>
